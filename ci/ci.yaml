@@ -1,0 +1,24 @@
+build:
+  steps:
+    - action: clean-ws
+      title: clean work dir
+      params:
+        lockfiles:
+          - yarn.lock
+    # - action: run-script
+    #   title: lint
+    #   continuable: true
+    #   params:
+    #     image: elliothu/node14-with-pnpm
+    #     command:
+    #       - bash
+    #       - ci/lint.sh
+    - action: run-script
+      title: build
+      params:
+        image: elliothu/node14-with-pnpm
+        command:
+          - bash
+          - ci/release.sh
+deploy:
+  steps: []
