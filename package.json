@@ -12,7 +12,7 @@
     "typescript": "tsc --noEmit",
     "lint": "jest --config \"jest.eslint.config.js\"",
     "prettier": "prettier --write \"**/*.{ts,js,jsx,tsx}\"",
-    "prepare": "bob build",
+    "build": "bob build",
     "dev-app": "yarn --cwd dev-app",
     "example-app": "yarn --cwd example-app",
     "pods": "cd dev-app && pod-install --quiet",
