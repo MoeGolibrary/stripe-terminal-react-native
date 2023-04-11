@@ -12,7 +12,7 @@
     "typescript": "tsc --noEmit",
     "lint": "jest --config \"jest.eslint.config.js\"",
     "prettier": "prettier --write \"**/*.{ts,js,jsx,tsx}\"",
-    "build": "bob build",
+    "prepare": "bob build",
     "dev-app": "yarn --cwd dev-app",
     "example-app": "yarn --cwd example-app",
     "pods": "cd dev-app && pod-install --quiet",
@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/stripe/stripe-terminal-react-native#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://nexus.devops.moego.pet/repository/npm-local/"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",

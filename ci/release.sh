@@ -19,5 +19,4 @@ npx npm-cli-login \
   -r "https://nexus.devops.moego.pet/repository/npm-local" # Please note here cannot add end slash
 
 yarn --frozen-lockfile --no-cache
-yarn run build
 yarn run release
